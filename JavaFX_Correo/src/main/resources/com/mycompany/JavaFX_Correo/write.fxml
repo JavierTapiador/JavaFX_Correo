@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="758.0" prefWidth="1069.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.JavaFX_Correo.WriteController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #9fdd6f;">
+         <children>
+            <Button fx:id="btnReturn" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <VBox prefHeight="637.0" prefWidth="1069.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="64.0" text="ENVIAR A:">
+                     <HBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtTo" prefHeight="25.0" prefWidth="699.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="64.0" text="ASUNTO:">
+                     <HBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtSubject" prefHeight="25.0" prefWidth="699.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="259.0" prefWidth="1069.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="64.0" text="ASUNTO:">
+                     <HBox.margin>
+                        <Insets left="60.0" right="60.0" top="60.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextArea fx:id="txtMes" prefHeight="259.0" prefWidth="429.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="100.0" right="100.0" top="60.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="134.0" prefWidth="1069.0">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="btnSend" mnemonicParsing="false" prefHeight="56.0" prefWidth="163.0" style="-fx-background-color: #89cd51;" text="ENVIAR">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
